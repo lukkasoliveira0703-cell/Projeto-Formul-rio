@@ -1,0 +1,101 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        margin: 0%;/*margem da caixa*/
+        padding: 0%;/*espaçamento da caixa*/ 
+        box-sizing: border-box;/*cerve para, decidimos o tamanho da caixa*/
+        font-family: "poppins", sans-serif;
+    }
+    body{
+        display: flex;/*cerve para deixar todos as tags em varias direções*/
+        justify-content: center;/*justify funciona para mexer na caixa em varias direções */
+        align-items: center;/*cerve para alinhar os items no centro da pagina */
+        min-height: 100vh;/*min heigt feito para definir o minimo de altura da tela*//* vh cerve para vewport do heigth ou altura do heigth*/
+        background-image: url(./img/Background-01.jpg);
+        background-size: cover;/*tag para a imagem se adptar ao fundo*/
+        background-position: center;/*tag cerve para centralizar a imagem*/
+    }
+    .container{/*caixa principal do meu formulário*/
+        width: 420px;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255,.2); 
+        border-radius: 10px;
+        color: white;
+        padding: 30px 40px;
+        box-shadow: 0px 0px 10px rgba(0,0 ,0 ,.2); 
+        backdrop-filter: blur(20px);
+    }
+    .container h1 {/*alterando o tamanho do título dentro do container*/
+        font-size: 2.3em;/*o "em" é o valor em divisao de pixels*/
+        text-align: center;
+    }
+    .caixa-botao{
+        position: relative;/*essa tag de position cerve para deixar relativo o tamnho que eu vou passar para ele*/
+        width: 100%;
+        height: 50px;
+        margin: 30px 0px;
+    }
+    .caixa-botao input{/*alterando o comportamento do imput dentro da caixa do botão*/
+        width: 100%;
+        height: 100%;
+        background-color: transparent;/*tag para mudar a cor do fundo em transparente*/
+        border: 2px solid;
+        outline: none;
+        color: white;
+        padding: 20px 45px 20px 20px;
+    }
+    .caixa-botao input::placeholder{
+        color: rgb(248, 132, 252);
+    }
+    .caixa-botao i{/*icone que esta dentro do botão de input*/
+        position: absolute;/*o absolute cerve para eu mesmo passar uma posição absoluta para ele*/
+        right: 10px;
+        top: 35%;
+        font-size: 20px;
+    }
+    .Lembrar-senha{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Lembrar-senha label input{
+        accent-color: rgb(248,132,252);
+        margin-right: 5px;
+    }
+    .Lembrar-senha a{
+        text-decoration: none;
+        color: white;
+    }
+    .Lembrar-senha a:hover{
+        text-decoration: underline;
+    }
+    .login{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(248,132,252);
+        border: none;
+        border-radius: 40px;
+        font-size: 1em;
+        color: #333;
+        font-weight: 600;
+        box-shadow:0 0 10px rgba(0,0,0,.1);
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .login:hover{
+        background-color: transparent;
+        border: 2px solid;
+        color: white;
+        transition: 0.5s;/*transition é uma tag que voce pode colocar uma duração de tempo em qualquer caixa*/
+    }
+    .cadastro{
+        font-size: 14px;
+        text-align: center;
+        margin: 20px 0px 15px;
+    }
+    .cadastro a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+    .cadastro a:hover{/*tag para mexer uma linha especifica dentro da caixa*/
+       text-decoration: overline;/*uma decoração de texto*/
+    }
