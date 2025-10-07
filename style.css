@@ -33,6 +33,8 @@
         width: 100%;
         height: 50px;
         margin: 30px 0px;
+      
+    
     }
     .caixa-botao input{/*alterando o comportamento do imput dentro da caixa do botão*/
         width: 100%;
@@ -42,15 +44,17 @@
         outline: none;
         color: white;
         padding: 20px 45px 20px 20px;
+        border-radius: 40px;
     }
     .caixa-botao input::placeholder{
         color: rgb(248, 132, 252);
     }
     .caixa-botao i{/*icone que esta dentro do botão de input*/
         position: absolute;/*o absolute cerve para eu mesmo passar uma posição absoluta para ele*/
-        right: 10px;
+        right: 15px;
         top: 35%;
         font-size: 20px;
+
     }
     .Lembrar-senha{
         display: flex;
@@ -63,6 +67,7 @@
     .Lembrar-senha a{
         text-decoration: none;
         color: white;
+  
     }
     .Lembrar-senha a:hover{
         text-decoration: underline;
